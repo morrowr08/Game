@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+}
+#game #gameContainer{
+	width: 1024px;
+	height: 649px;
+	position: relative;
+	border: 10px solid #000000;
+	overflow: hidden;
+}
+#playGame { 
+	width: 100%;
+	height: 100%;
+	background: #a7a7a7; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3YTdhNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkM2QzZDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #a7a7a7 0%, #d3d3d3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7a7a7), color-stop(100%,#d3d3d3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a7a7a7 0%,#d3d3d3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a7a7a7 0%,#d3d3d3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a7a7a7 0%,#d3d3d3 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a7a7a7 0%,#d3d3d3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7a7a7', endColorstr='#d3d3d3',GradientType=0 ); /* IE6-8 */
+}
+/*#game #candyGameLogo {
+	width: 320px;
+	height: 106px;
+	background: url('images/candyGameLogo.png');
+	background-size: 100% auto;
+	position: absolute;
+	top: -80px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}*/
+
+/** Game Instructions **/
+#game #startGame {
+	cursor: pointer;
+}
+
+#game #basket {
+	width: 181px;
+	height: 161px;
+	background: url('images/basketBack.png') center top no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	z-index: 1005 !important;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.basketFront {
+	width: 181px;
+	height: 161px;
+	background: url('images/basketFront.png') center top no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1111 !important;
+}
+.points {
+	font-size: 40px;
+	color: #FFFFFF;
+	text-align: center;
+	position: absolute;
+	top: -50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+#game #gameInfo {
+	width: 1004px;
+	height: 48px;
+	position: absolute;
+	bottom: 0;
+	background: url('images/gameInfoBg.png') center top no-repeat;
+	background-size: 1004px 58px;
+	padding: 22px 0 0 0;
+	z-index: 9999;
+}
+#game #gameInfo > div {
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	color: #FFFFFF;
+}
+#game #instructions {
+
+}
+#game #gameStartCountdown {
+	width: 1024px;
+	height: 649px;
+	background: rgba(255, 255, 255, 0.01);
+}
+#game #score {
+	font-size: 22px;
+	text-align: left;;
+}
+#game #level {
+	font-size: 22px;
+	text-align: right;
+}
+#game #timer {
+	position: relative;
+	top: -10px;
+	left: -3px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 34px;
+	z-index: 10001 !important;
+}
+#game .candy {
+    top:0px;
+    left:0px;
+    position:absolute;
+    z-index:1002 !important;
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+/** Airplane object **/
+#game .candy0 {
+	width: 79px;
+	height: 86px;
+	background: url('images/airplane.png');
+}
+/** ChocolateSanta Object **/
+#game .candy1 {
+	width: 54px;
+	height: 51px;
+	background: url('images/chocolateSanta.png');
+}
+/** ChocolateTree Object **/
+#game .candy2 {
+	width: 56px;
+	height: 53px;
+	background: url('images/chocolateTree.png');
+}
+/** Coins Object **/
+#game .candy3 {
+	width: 64px;
+	height: 53px;
+	background: url('images/coins.png');
+}
+/** Draddle Object **/
+#game .candy4 {
+	width: 44px;
+	height: 69px;
+	background: url('images/draddle.png');
+}
+/** Lollipop Object **/
+#game .candy5 {
+	width: 86px;
+	height: 126px;
+	background: url('images/lollipop.png');
+}
+/** Santa Object **/
+#game .candy6 {
+	width: 83px;
+	height: 124px;
+	background: url('images/santa.png');
+}
+/** Train Object **/
+#game .candy7 {
+	width: 75px;
+	height: 105px;
+	background: url('images/train.png');
+}

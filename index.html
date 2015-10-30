@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<link rel="stylesheet" href="game.css">
+</head>
+<body id="game">
+	<div id="gameContainer">
+		<div id="candyGameLogo"></div>
+		<div id="instructions">
+			<div id="startGame">Play Now</div>
+		</div>
+		<div id="gameStartCountdown" style="display: none;">
+			<h1>Get Ready!</h1>
+			<p></p>
+		</div>
+		<div id="playGame" style="display: none;">
+			<div id="basket">
+				<!-- <div class="basketFront"></div> -->
+				<div id="plusPoints" class="points" style="opacity: 0;">+20 Points</div>
+				<div id="minusPoints" class="points" style="opacity: 0;">-20 Points</div>
+			</div>
+			<div class="basketFront"></div>
+			<div id="gameInfo">
+				<div id="score">Score: <span></span></div>
+				<div id="timer">:<span></span></div>
+				<div id="level">Level: <span></span></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/utils/Draggable.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
+	<script text="text/javascript" src="jquery.tock.min.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
